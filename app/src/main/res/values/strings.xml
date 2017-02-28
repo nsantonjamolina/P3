@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">P3</string>
+
+    <!--Botones main-->
+    <string name="play">Play</string>
+    <string name="score">Score</string>
+    <string name="settings">Settings</string>
+
+    <!--Botones credits-->
+    <string name="credits_txt">Nacho Santonja</string>
+
+</resources>
