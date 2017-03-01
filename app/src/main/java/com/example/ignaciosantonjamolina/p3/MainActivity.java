@@ -8,6 +8,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -24,18 +25,6 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-//    /*
-//        This method is executed when any action from the ActionBar is selected
-//    */
-//    public void onGroupItemClick(MenuItem item) {
-//        if(item.getItemId() == R.id.credits){
-//            // There is no Internet connection available, so inform the user about that
-//            Toast.makeText(this, item.getItemId() , Toast.LENGTH_SHORT).show();
-//        Intent intent = new Intent(this, CreditsActivity.class);
-//        startActivity(intent);
-//    }
-//    }
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -50,34 +39,72 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final Button button = (Button) findViewById(R.id.bSettings);
+        final Button button1 = (Button) findViewById(R.id.bScore);
+        final Button button2 = (Button) findViewById(R.id.bPlay);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                dashboard(v);
+
+//                // Perform action on click
+//                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                dashboard(v);
+
+//                // Perform action on click
+//                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                dashboard(v);
+
+//                // Perform action on click
+//                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
+//                startActivity(intent);
+            }
+        });
+
     }
 
     /*
         Método para ejecutar las diferentes actividades cuando se hace click en algún botón del dashboard
     */
-    public void dashboardButtonClicked(View v){
+    public void dashboard(View v){
 
         //Objeto intent para lanzar las actividades relacionadas
         Intent intent = null;
-
+        Log.i("main","hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?");
         //Determinar el activity a lanzar de acuerdo al id the botón
-        switch (v.getId()){
+       // switch (v.getId()){
+        switch(v.getId()){
 
             case R.id.bPlay:
+                Log.i("main","botón play pulsado");
                 intent = new Intent(this, PlayActivity.class);
                 break;
 
             case R.id.bScore:
+                Log.i("main","botón score pulsado");
                 intent = new Intent(this, ScoreActivity.class);
 
                 break;
 
             case R.id.bSettings:
+                Log.i("main","botón settings pulsado");
                 intent = new Intent(this, SettingsActivity.class);
                 break;
         }
