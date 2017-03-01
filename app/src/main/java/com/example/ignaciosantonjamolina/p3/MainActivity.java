@@ -72,9 +72,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 dashboard(v);
 
-//                // Perform action on click
-//                Intent intent = new Intent(MainActivity.this, SettingsActivity.class);
-//                startActivity(intent);
             }
         });
 
@@ -87,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Objeto intent para lanzar las actividades relacionadas
         Intent intent = null;
-        Log.i("main","hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?hola?");
         //Determinar el activity a lanzar de acuerdo al id the botón
        // switch (v.getId()){
         switch(v.getId()){

@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TabHost;
+import android.widget.TextView;
 
 /**
  * Created by ignaciosantonjamolina on 28/2/17.
@@ -38,7 +39,15 @@ public class ScoreActivity  extends AppCompatActivity {
 
     tabs.setCurrentTab(0);
 
-
+//    final TextView a = (TextView)findViewById(R.id.a);
+//    String nombreScore1 = a.getText().toString();
+//        nombreScore1 += "Nacho San";
+//        a.setText(nombreScore1);
+//
+//        final TextView b = (TextView)findViewById(R.id.b);
+//        String scoreNombre1 = a.getText().toString();
+//        scoreNombre1 += "3000";
+//        b.setText(scoreNombre1);
 
 }
 }
