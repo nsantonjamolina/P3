@@ -3,24 +3,53 @@ package com.example.ignaciosantonjamolina.p3;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    /*
+        This method is executed when the activity is created to populate the ActionBar with actions
+     */
+
     public boolean onCreateOptionsMenu(Menu menu) {
+        // Generate the Menu object from the XML resource file
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.example_menu, menu);
+        //getMenuInflater().inflate(R.menu.example_menu, menu);
         return true;
     }
 
-    public void onGroupItemClick(MenuItem item) {
-        // One of the group items (using the onClick attribute) was clicked
-        // The item parameter passed here indicates which item it is
-        // All other menu item clicks are handled by onOptionsItemSelected()
+//    /*
+//        This method is executed when any action from the ActionBar is selected
+//    */
+//    public void onGroupItemClick(MenuItem item) {
+//        if(item.getItemId() == R.id.credits){
+//            // There is no Internet connection available, so inform the user about that
+//            Toast.makeText(this, item.getItemId() , Toast.LENGTH_SHORT).show();
+//        Intent intent = new Intent(this, CreditsActivity.class);
+//        startActivity(intent);
+//    }
+//    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.credits:
+                Log.i("ActionBar", "Nuevo!");
+                Intent intent = new Intent(this, CreditsActivity.class);
+                startActivity(intent);
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

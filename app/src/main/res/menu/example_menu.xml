@@ -1,9 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/item1"
-        android:title="titulo"></item>
-
-
-    <group android:id="@+id/group">
+    <item android:id="@+id/credits"
+        android:title="Credits"></item>
+    <!--<group android:id="@+id/group">
         <item android:id="@+id/group_item1"
             android:onClick="onGroupItemClick"
             android:title="titulo"></item>
@@ -11,16 +9,5 @@
         <item android:id="@+id/group_item2"
             android:onClick="onGroupItemClick"
             android:title="titulo"></item>
-
-    </group>
-    <item android:id="@+id/submenu"
-        android:title="titulo"
-
-        >
-        <menu>
-            <item android:id="@+id/submenu_item1"
-                android:title="titulo"
-                />
-        </menu>
-    </item>
+    </group>-->
 </menu>

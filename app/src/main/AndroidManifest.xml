@@ -17,6 +17,32 @@
             </intent-filter>
         </activity>
 
+        <!--Credits activity-->
+        <!--Enable up navigation-->
+        <activity
+            android:name="com.example.ignaciosantonjamolina.p3.CreditsActivity"
+            android:label="@string/title_activity_credits"
+            android:parentActivityName="com.example.ignaciosantonjamolina.p3.MainActivity">
+
+            <!--Enable up navigation for backwards compatibility-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ignaciosantonjamolina.p3.MainActivity"/>
+        </activity>
+
+        <!--Credits activity-->
+        <!--Enable up navigation-->
+        <activity
+            android:name="com.example.ignaciosantonjamolina.p3.SettingsActivity"
+            android:label="@string/title_activity_credits"
+            android:parentActivityName="com.example.ignaciosantonjamolina.p3.MainActivity">
+
+            <!--Enable up navigation for backwards compatibility-->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.ignaciosantonjamolina.p3.MainActivity"/>
+        </activity>
+
     </application>
 
 </manifest>

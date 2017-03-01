@@ -9,4 +9,7 @@
     <!--Botones credits-->
     <string name="credits_txt">Nacho Santonja</string>
 
+    <!--Manifest-->
+    <string name="title_activity_credits">Credits</string>
+
 </resources>
